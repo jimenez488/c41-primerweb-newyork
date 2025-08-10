@@ -1,0 +1,112 @@
+body{
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+}
+
+h1.titulo1 {
+  color: #2f4f7f;
+  text-align: center;
+  font-size: 2.5em;
+  margin-top: 20px;
+}
+
+p.parrafo1 {
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin: 20px auto;
+  max-width: 800px;
+  text-align: justify;
+  color:#03a9f4;
+}
+
+img.ciudad.noche {
+  max-width: 600px;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+}
+
+h2.subtitulo {
+  color: #2f4f7f;
+  text-align: center;
+  font-size: 2em;
+  margin-top: 30px;
+}
+
+ul.lista-lugares {
+  list-style-type: none;
+  font-size: 1.2em;
+  line-height: 1.6;
+  padding: 0;
+  max-width: 800px;
+  margin: 20px auto;
+  color:#03a9f4;
+}
+
+img.wall-street {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+}
+
+p.parrafo2 {
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin: 20px auto;
+  max-width: 800px;
+  text-align: justify;
+  color:#03a9f4;
+}
+
+p.parrafo3 {
+  font-size: 1.2em;
+  line-height: 1.0;
+  margin: 20px auto;
+  max-width: 800px;
+  text-align: justify;
+  color:#090909;
+}
+
+p.parrafo4 {
+  font-size: 1.6em;
+  margin: 20px auto;
+  max-width: 800px;
+  text-align: justify;
+  color:#090909;
+}
+
+img.libertad {
+  max-width: 600px;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+}
+
+p.parrafo5 {
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin: 20px auto;
+  max-width: 800px;
+  text-align: justify;
+  color:#03a9f4;
+}
+
+p.parrafo6 {
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin: 20px auto;
+  max-width: 800px;
+  text-align: justify;
+  color:#03a9f4;
+}
+
+p.parrafo7 {
+  font-size: 1.7em;
+  margin: 20px auto;
+  max-width: 800px;
+  text-align: justify;
+  color:#080808;
+}
