@@ -9,9 +9,9 @@ body{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  background-color:#cf9e28;
+  background: linear-gradient(90deg, #474646 50%, #cf9e28 100%);
   align-items: center;
-  margin-bottom: 1px;
+  margin-bottom: 0;
   font-size: 1.3em;
   padding: 10px 0; /* Espacio arriba y abajo */
 }
@@ -37,7 +37,7 @@ body{
   background-repeat: no-repeat;
   list-style-type: none;
   cursor: pointer;
-  color: #f3efef;
+  color: #f0eeeb;
   font-weight: bold;
   
 }
@@ -46,7 +46,7 @@ body{
   text-align: center;
   margin-top: 10px;   /* Menos espacio arriba */
   margin-bottom: 0px;
-  font-family:'Brush Script MT', cursive, Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Arial Black', Arial, sans-serif;
   font-style: italic;
   font-weight: 100;
   font-size: 7em;
@@ -58,13 +58,20 @@ body{
   
 }
 
+.busqueda {
+  display: flex;
+  gap: 10px; /* Espacio entre el input y el botón */
+  justify-content: center; /* Centra el formulario horizontalmente */
+  margin: 20px 0; /* Espacio arriba y abajo */
+}
+
 .busqueda input[type="text"] {
   padding: 12px;
   font-size: 1.2em;
   border-radius: 8px;
   border: 2px solid #cf9e28;
   width: 500px;
-  background-color: #fffbe6;
+  background-color: #f0efeb;
   color: #3e3b3b;
   box-shadow: 0 2px 8px rgba(0,0,0,0.10);
 }
@@ -87,26 +94,37 @@ body{
   color: #222;
 }
 
-.structure { 
+.structure {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 20px;
-  background-color:#d9e0e0;
-  color: #595151;
+  background: linear-gradient(90deg, #474646 50%, #cf9e28 100%);
+  color: #f1ecec;
   width: 100%;
+  max-width: none;      /* Puedes ajustar este valor si quieres más ancho */
+  margin: 0;
 }
 
-
 .structure > div:first-child {
-   flex: 1;
+  flex: 1;
+  max-width: 1200px; /* Limita el ancho del texto y barra */
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.busqueda input[type="text"] {
+  width: 100%;
+  max-width: 500px;
+  box-sizing: border-box;
 }
 
 .structure img {
-  width: 300px; /* Ajusta el tamaño según lo que necesites */
-  height: auto;
-  align-self: flex-start; /* Imagen alineada arriba */
-
+  width: 100%;         /* Ocupa todo el ancho del contenedor */
+  max-width: 100%;    /* Máximo ancho permitido */
+  height: auto;       /* Altura fija */
+  object-fit: cover;   /* Recorta la imagen si es necesario */
+  display: block;
 }
 
 .subtitulo {
@@ -118,12 +136,16 @@ body{
 }
 
 .quienes-somos {
+  border-radius: 18px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+  padding: 30px 40px;
+  margin: 30px auto;
+  max-width: 700px;
   text-align: center;
-  font-size: 1.5em;
-  margin: 20px; /* Espacio alrededor del texto */
-  padding: 10px; /* Espacio interno */
-  border-radius: 10px; /* Bordes redondeados */
-}
+  font-size: 1.7em;
+  color: #090909;
+  font-family: 'Arial Black', Arial, sans-serif;
+}  
 
 .subti2{
   text-align: center;
@@ -299,6 +321,23 @@ body{
   color: #595151;
 }
 
+.envio-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 30px 0;
+  font-size: 1.5em;
+  color: #cf9e28;
+  font-family: 'Arial Black', Arial, sans-serif;
+}
+
+.icono-envio {
+  width: 190px;
+  height: 190px;
+}
+
 .contacto12 {
   display: flex;
   flex-direction: column;
@@ -355,25 +394,139 @@ body{
   color: #222;
 } 
 
-footer {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 20px 0;
-}
-
-.social-icons {
+.redes-sociales {
+  margin-top: 10px;
   display: flex;
   justify-content: center;
-  gap: 15px;
+  gap: 20px;
 }
 
-.social-icons a img {
+.icono-red {
   width: 40px;
   height: 40px;
-  transition: transform 0.3s ease;
+  border-radius: 8px;
+  transition: transform 0.2s;
 }
 
-.social-icons a img:hover {
-  transform: scale(1.2);
+.icono-red:hover {
+  transform: scale(1.15);
+}
+
+.terminos {
+  font-size: 0.9em;
+  color: #595151;
+  text-decoration: underline;
+  margin-left: 20px;
+  align-self: center;
+}
+
+.terminos,
+.soporte {
+  font-size: 0.9em;
+  color: #595151;
+  text-decoration: underline;
+  margin-left: 20px;
+  align-self: center;
+}
+
+@media (max-width: 900px) {
+  .menu {
+    flex-direction: column;
+    font-size: 1em;
+    padding: 5px 0;
+  }
+  .logo-img {
+    width: 80vw;
+    margin-bottom: 10px;
+  }
+  .botones-menu ul {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0;
+    align-items: center;
+  }
+  .structure {
+    flex-direction: column;
+    
+    align-items: center;
+  }
+
+   .structure > div:last-child {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+   }
+
+  .structure img {
+    height: 300px;
+    max-width: 100%;
+  }
+  .titulo1 {
+    font-size: 3em;
+  }
+  .busqueda input[type="text"] {
+    width: 90vw;
+    font-size: 1em;
+  }
+  .productos {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+  .producto1 img,
+  .producto2 img,
+  .producto3 img,
+  .producto4 img {
+    width: 80px;
+  }
+  .quienes-somos {
+    padding: 15px 10px;
+    font-size: 1.1em;
+    max-width: 95vw;
+  }
+  .opiniones {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+  .envio-info .icono-envio {
+    width: 100px;
+    height: 100px;
+  }
+  .contacto12 {
+    padding: 20px 5px;
+    max-width: 95vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .menu {
+    font-size: 0.9em;
+    padding: 2px 0;
+  }
+  .logo-img {
+    width: 100vw;
+  }
+  .titulo1 {
+    font-size: 2em;
+  }
+  .busqueda input[type="text"] {
+    width: 95vw;
+    font-size: 0.9em;
+  }
+  .quienes-somos {
+    padding: 10px 5px;
+    font-size: 1em;
+  }
+  .envio-info .icono-envio {
+    width: 70px;
+    height: 70px;
+  }
+  .contacto12 {
+    padding: 10px 2px;
+    font-size: 1em;
+  }
+  .productos {
+    gap: 10px;
+  }
 }
