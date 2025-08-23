@@ -451,10 +451,11 @@ body{
     align-items: center;
   }
 
-   .structure > div:last-child {
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
+   .structure > div:first-child {
+    max-width: 100vw;
+    width: 100vw;
+    padding: 50px;
+    box-sizing: border-box;
    }
 
   .structure img {
@@ -465,8 +466,10 @@ body{
     font-size: 3em;
   }
   .busqueda input[type="text"] {
-    width: 90vw;
-    font-size: 1em;
+    width:100vw;
+    max-width: 100vw;
+    box-sizing: border-box;
+    margin: 0;
   }
   .productos {
     flex-direction: column;
