@@ -21,8 +21,8 @@
       <ul>
         <li><a href="index.html">Inicio</a></li>
         <li><a href="nosotros.html">¿Quienes Somos?</a></li>
-        <li>Productos</li>
-        <li>Contacto</li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
       </ul> 
     </div>
   </div>
@@ -38,7 +38,7 @@
       <button type="button">Buscar</button>
     </div>
   </div>
-  <div> 
+  <div>
     <img src="imagenes/img12.jpg" alt="vela cafe" class="imagen1">
   </div>
 </div>
@@ -102,7 +102,7 @@
 
 <div class="envio-info">
   <span>Contamos con envío</span>
-  <img src="imagenes/envios.png" alt="Envío" class="icono-envio">
+  <img src="imagenes/envios2.png" alt="Envío" class="icono-envio">
 </div>
 
 
@@ -126,7 +126,6 @@
   </section>
 
   <footer>
-  <p>&copy; 2025 My Web Page</p>
   <div class="redes-sociales">
     <a href="https://facebook.com" target="_blank">
       <img src="imagenes/png-transparent-computer-icons-facebook-logo-facebook-logo-fine-art-thumbnail.png" alt="Facebook" class="icono-red">
@@ -140,9 +139,26 @@
     <a href="https://wa.me/" target="_blank">
       <img src="imagenes/whatss.jpg" alt="WhatsApp" class="icono-red">
     </a>
-    <a href="#" class="terminos">Términos y condiciones</a>
-     <a href="#" class="soporte">Soporte</a>
+    <a href="#" class="terminos" onclick="document.getElementById('modal-terminos').style.display='block';return false;">📄 Términos y condiciones</a>
+      <a href="#" class="soporte" onclick="document.getElementById('modal-soporte').style.display='block';return false;">🛠 Soporte</a>
   </div>
+  <!-- Modal de Términos -->
+<div id="modal-terminos" class="modal">
+  <div class="modal-contenido">
+    <span class="cerrar" onclick="document.getElementById('modal-terminos').style.display='none'">&times;</span>
+    <h3>Términos y condiciones</h3>
+    <p>Tu información está protegida. El uso de nuestros productos implica la aceptación de nuestras políticas de privacidad y condiciones de compra. Para más detalles, contáctanos.</p>
+  </div>
+</div>
+<!-- Modal de Soporte -->
+<div id="modal-soporte" class="modal">
+  <div class="modal-contenido">
+    <span class="cerrar" onclick="document.getElementById('modal-soporte').style.display='none'">&times;</span>
+    <h3>Soporte</h3>
+    <p>¿Tienes dudas o problemas con tu pedido? Escríbenos a <a href="mailto:soporte@luzyamor.com">soporte@luzyamor.com</a> o envía un WhatsApp y te ayudamos lo antes posible.</p>
+  </div>
+</div>
+<p>&copy; 2025 Pagina Demo Jose</p>
 </footer>
 </body>
 </html>
