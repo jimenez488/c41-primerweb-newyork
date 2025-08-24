@@ -822,21 +822,28 @@ form button:hover {
     min-width: 90px;
     box-sizing: border-box;
   }
-}
+
 
 @media (max-width: 600px) {
-  .contacto12 {
+  .contacto-section {
     padding: 10px 2vw;
     max-width: 98vw;
     box-sizing: border-box;
-    font-size: 1em;
   }
-  .contacto12 form {
+  .contenido-contacto {
+    padding: 12px 4vw;
+    max-width: 98vw;
+    box-sizing: border-box;
+  }
+  .contenido-contacto form {
     width: 100%;
   }
-  .contacto12 input,
-  .contacto12 textarea {
-    width: 98%;
+  .contenido-contacto input,
+  .contenido-contacto textarea {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
     box-sizing: border-box;
+    margin: 0 0 10px 0;
   }
 }
